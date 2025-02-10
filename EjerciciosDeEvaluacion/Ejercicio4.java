@@ -19,7 +19,7 @@ public class Ejercicio4 {
     System.out.println("Adivina una de las palabras ingresadas :");
 
     do{
-    System.out.println("Tienes "+intentos+" intentoss \n Intentalo de nuevo: ");
+    System.out.println("Tienes "+intentos+" intentos: ");
     String palabraAdivina = scanner.nextLine();
     
     int a = 0;
@@ -28,17 +28,22 @@ public class Ejercicio4 {
     if( arreglo[a].equals(palabraAdivina)){
         System.out.println("Correcto, bien hecho");
         acerto = true;
-        
+        break;
     }
     a++;
     }while(a <5);
 
-    
-    intentos--;
+    if(!acerto ){
+        intentos--;
+    }if(intentos > 0 && !acerto){
+        System.out.println("Intentalo de nuevo");
+    }
+
     }while(intentos >0 && !acerto);
     
     if(intentos == 0 ){
         System.out.println("!!!Perdiste ");
+        
     }
 
     scanner.close();
