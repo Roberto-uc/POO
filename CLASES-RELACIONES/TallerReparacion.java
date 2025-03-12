@@ -15,7 +15,7 @@ public class TallerReparacion {
         tecnico2.asignarTelefono(telefono1);
         
         // Crear clietes
-        Cliente cliente1 = new Cliente("Juanito", "CLI-001", "TEL-001");
+        Cliente cliente1 = new Cliente("JUANITO","981");
         //CLIENTE SOBRECARGADO
         Cliente cliente2 = new Cliente("PANCHO","TEL-002");
         
